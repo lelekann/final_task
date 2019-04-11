@@ -36,17 +36,6 @@ function handleError (err) {
   this.emit('end')
 }
 
-gulp.task('lib-js', function () {
-  return gulp.src(LIB_JS_INCLUDE_PATHS)
-    .pipe(plumber({ errorHandler: handleError }))
-    .pipe(mode.production(decomment()))
-    .pipe(mode.development(sourcemaps.init()))
-    .pipe(concat('app.js'))
-    .pipe(uglify())
-    .pipe(mode.development(sourcemaps.write()))
-    .pipe(gulp.dest('./js'))
-})
-
 gulp.task('styles', function () {
   return gulp.src('./scss/main.scss')
     .pipe(plumber({errorHandler: handleError}))
@@ -64,20 +53,3 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('./css/'))
 })
 
-gulp.task('scripts', function () {
-  return gulp.src(CUSTOM_JS_SOURCE)
-    .pipe(plumber({ errorHandler: handleError }))
-    .pipe(mode.production(decomment()))
-    .pipe(mode.development(sourcemaps.init()))
-    .pipe(babel({compact: true}))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(mode.development(sourcemaps.write()))
-    .pipe(gulp.dest('./js/'))
-})
-
-gulp.task('watch', ['styles', 'scripts'], function () {
-  gulp.watch('./scss/**/*.scss', ['styles'])
-  gulp.watch('./source-js/main.js', ['scripts'])
-})
-
-gulp.task('default', ['lib-js', 'styles', 'scripts'], function () {})

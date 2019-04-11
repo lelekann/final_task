@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title><?php wp_title(); ?></title>
-  <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
 <body>
@@ -19,12 +18,15 @@
     <div id="nav-menu-header">
       <?php wp_nav_menu( array(
         'theme_location'  => 'primary',
-        'container'       => false,
+        'container'       => true,
         'menu_class'      => 'menu-header'
       )); ?>
     </div>
   </div>
 </header>
+
+<main>
+  <div class="container">
 
 
 

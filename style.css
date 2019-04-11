@@ -6,22 +6,4 @@ Author URI: vredina.ann@gmail.com
 Version: 1.0
 */
 
-#header {
-  padding: 1em 3em;
-}
 
-.container {
-  margin: 0 auto;
-  width: 1185px
-}
-
-#nav-menu-header {
-  display: inline-block;
-  border: 1px solid red;
-}
-
-#nav-menu-header li {
-  display: inline-block;
-  list-style: none;
-  margin-right: 1em;
-}
