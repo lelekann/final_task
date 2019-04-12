@@ -1,11 +1,4 @@
-
-<?php
-/*
-Template Name: homePage
-Template Post Type: post, page
-*/
-
- get_header(); ?>
+<?php get_header(); ?>
 
 <?php while (have_posts()) : the_post(); ?>
 

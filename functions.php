@@ -8,7 +8,7 @@ add_action('wp_enqueue_scripts', 'al_jquery');
 
 //Styles and Fonts
 function al_styles(){
-  wp_register_style('style', get_template_directory_uri() . '/css/main.min.css');
+  wp_register_style('style', get_template_directory_uri() . '/assets/css/main.min.css');
   wp_enqueue_style( 'style');
   wp_register_style('al_barlow','https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
   wp_enqueue_style('al_barlow');

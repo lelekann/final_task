@@ -1,2 +1,20 @@
-@import "header";
-@import "footer";
+@charset "utf-8";
+
+//utils
+@import "utils/variables";
+@import "utils/mixin";
+
+//layouts
+@import "layouts/header";
+@import "layouts/footer";
+
+//base
+@import "base/typography";
+
+//components
+@import "components/buttons";
+@import "components/inputs";
+
+//pages
+//@import "pages";
+
