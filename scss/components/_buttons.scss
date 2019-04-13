@@ -1,0 +1,20 @@
+.btn {
+  padding: 15px;
+  text-transform: uppercase;
+  font: 15px/35px "Barlow", sans-serif;
+  letter-spacing: 0.6px;
+  background: $btn-color;
+  color: $font-color-1;
+  border: 1px solid rgba(204,204,204,0);
+}
+
+.btn-section {
+  max-width: 185px;
+  max-height: 65px;
+  font: 700 19px/22px "Barlow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.52px;
+  background: $btn-color;
+  color: $font-color-2;
+  border: 1px solid rgba(204,204,204,1);
+}

@@ -1,0 +1,32 @@
+.white-h1 {
+  color: $font-color-1;
+  font: 300 38px/42px "Open Sans", sans-serif;
+  letter-spacing: -0.76px;
+}
+
+.dark-h1 {
+  color: $font-color-2;
+}
+
+.white-h2 {
+  color: $font-color-1;
+  font: 700 19px/35px "Barlow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.52px;
+}
+
+.dark-h2 {
+  color: $font-color-2;
+}
+
+.white-description {
+  color: $font-color-1;
+  font: 500 19px/35px "Barlow", sans-serif;
+  letter-spacing: -0.19px;
+}
+
+.dark-description {
+  color: $font-color-2;
+  font: 19px/34px "Barlow", sans-serif;
+  letter-spacing: -0.38px;
+}
