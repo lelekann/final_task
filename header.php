@@ -18,7 +18,7 @@
     <div id="nav-menu-header">
       <?php wp_nav_menu( array(
         'theme_location'  => 'primary',
-        'container'       => true,
+        'container'       => false,
         'menu_class'      => 'menu-header'
       )); ?>
     </div>

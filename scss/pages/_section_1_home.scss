@@ -1,0 +1,27 @@
+.home_section_1 {
+  position: relative;
+  max-width: 1280px;
+  max-height: 610px;
+  background: #488122;
+  .bg_image {
+    vertical-align: bottom;
+  }
+}
+
+.content_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  right: 85px;
+  top: 35px;
+  text-align: right;
+  max-width: 670px;
+  .white-h1 {
+    margin-bottom: 27px;
+  }
+  .top-description {
+    margin-bottom: 44px;
+  }
+}
+

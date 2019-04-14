@@ -19,7 +19,7 @@ var gulp = require('gulp'),
 
 
 var SASS_INCLUDE_PATHS = [
-    './node_modules/reset-css/sass/_reset.scss',
+    './node_modules/normalize-scss/sass/_normalize.scss',
 ]
 var LIB_JS_INCLUDE_PATHS = [
     './node_modules/jquery/dist/jquery.js',

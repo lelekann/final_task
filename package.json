@@ -23,6 +23,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.4.0",
+    "normalize-scss": "^7.0.1",
     "reset-css": "^4.0.1"
   },
   "scripts": {

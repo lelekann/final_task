@@ -1,0 +1,14 @@
+.home_section_2 {
+  padding: 35px 85px;
+  background: #294b09;
+  .content_flex_between {
+    display: flex;
+    justify-content: space-between;
+  }
+  p {
+    max-width: 815px;
+  }
+  a {
+    display: block;
+  }
+}
