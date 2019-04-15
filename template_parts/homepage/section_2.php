@@ -4,7 +4,7 @@
 
 <section class="home_section_2">
 
-    <div class="content_flex_between">
+    <div class="content_gorizontal">
       <?php if (!empty($text)): ?>
       <div class="top-description">
         <?php print $text; ?>

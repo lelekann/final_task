@@ -1,0 +1,26 @@
+.home_section_7 {
+  padding: 36px 92px 54px 111px;
+  background: #f2f2f2;
+
+  .content_gorizontal {
+    display: flex;
+    justify-content: space-between;
+
+    .content_vertical {
+      display: flex;
+      flex-direction: column;
+
+      .dark-h1 {
+        margin-bottom: 34px;
+        max-width: 535px;
+      }
+      .dark-description {
+        max-width: 466px;
+      }
+
+      .btn {
+        margin-top: 28px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.home_section_8 {
+  padding: 33px 338px 51px 251px;
+  background: #488122;
+
+  .content_gorizontal {
+    display: flex;
+    justify-content: space-between;
+
+    .content_vertical {
+      display: flex;
+      flex-direction: column;
+      max-width: 458px;
+      .white-h1 {
+        margin-bottom: 43px;
+      }
+
+    }
+  }
+}

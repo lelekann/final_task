@@ -15,7 +15,7 @@
       endif;
       ?>
 
-    <div class="content_flex">
+    <div class="content_vertical_main">
 
       <?php if (!empty($title)): ?>
         <div class="white-h1">
