@@ -13,8 +13,7 @@
 
       <div>
         <?php if (!empty($video)): ?>
-        <a href="<?php print $video['url']; ?>" class="btn">
-          <?php if (!empty($link)): ?>
+        <a href="<?php print $video['url']; ?>" class="btn"><?php if (!empty($link)): ?>
           <?php print $link['title']; ?>
           <?php endif; ?>
         </a>

@@ -8,8 +8,8 @@
 
     <div class="content_gorizontal">
       <div>
-        <?php if( !empty($image) ): ?>
-          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php if (!empty($image)): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
         <?php endif; ?>
       </div>
 
@@ -28,15 +28,19 @@
       </div>
 
       <div class="content_vertical">
-        <?php if (!empty($link_1)): ?>
-        <a href="<?php echo $link_1['url']; ?>" class="btn"><?php echo $link_1['title']; ?>
-          <?php endif; ?>
-        </a>
+        <div>
+          <?php if (!empty($link_1)): ?>
+          <a href="<?php echo $link_1['url']; ?>" class="btn"> <?php echo $link_1['title']; ?>
+            <?php endif; ?>
+          </a>
+        </div>
 
-        <?php if (!empty($link_2)): ?>
-        <a href="<?php echo $link_2['url']; ?>" class="btn"><?php echo $link_2['title']; ?>
-          <?php endif; ?>
-        </a>
+        <div>
+          <?php if (!empty($link_2)): ?>
+          <a href="<?php echo $link_2['url']; ?>" class="btn"> <?php echo $link_2['title']; ?>
+            <?php endif; ?>
+          </a>
+        </div>
       </div>
 
     </div>
