@@ -14,12 +14,14 @@ function al_styles(){
   wp_enqueue_style('al_barlow');
   wp_register_style('al_sans','https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
   wp_enqueue_style('al_sans');
+  wp_register_style('fontawesome','https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+  wp_enqueue_style('fontawesome');
 }
 add_action('wp_enqueue_scripts', 'al_styles');
 
 //Scripts
 function al_scripts(){
- // wp_enqueue_script( 'script-one', get_template_directory_uri() . '/js/script.one.js', array(), null, true );
+  wp_enqueue_script( 'script-one', get_template_directory_uri() . '/assets/js/main.min.js', array(), null, true );
   //wp_enqueue_script( 'script-two', get_template_directory_uri() . '/js/script.two.js', array(), null, true );
 }
 add_action('wp_enqueue_scripts', 'al_scripts');

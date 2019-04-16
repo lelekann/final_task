@@ -14,14 +14,17 @@ Template Post Type: page
   if (have_rows('faq')):
     while (have_rows('faq')) :
       the_row(); ?>
-      <div class="blok">
-        <h3 class="faq_question">
-          <?php the_sub_field('title'); ?>
-        </h3>
-        <p class="dark-description">
-          <?php the_sub_field('description'); ?>
-        </p>
-      </div>
+      <ul class="block">
+        <li>
+          <h3 class="faq_question">
+            <?php the_sub_field('title'); ?>
+          </h3>
+          <div class="dark-description">
+            <?php the_sub_field('description'); ?>
+          </div>
+        </li>
+
+      </ul>
 
     <?php
     endwhile;

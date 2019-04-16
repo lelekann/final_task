@@ -54,7 +54,7 @@ gulp.task('styles', function () {
 })
 
 gulp.task('scripts', function () {
-    return gulp.src(['./source-js/main.js'])
+    return gulp.src('./source-js/main.js')
         .pipe(plumber({ errorHandler: handleError }))
         .pipe(sourcemaps.init())
         .pipe(babel({compact: true}))
