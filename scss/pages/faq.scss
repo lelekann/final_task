@@ -16,19 +16,19 @@
     list-style: none;
     margin: 0;
 
-    h3 {
+    li {
       cursor: pointer;
       position:relative;
        }
 
-    h3:after {
+    li:after {
       content: "\f067";
       font-family: 'Font Awesome 5 Free', sans-serif;
       color: #00a4e4;
       font-weight: 700;
       position: absolute;
-      right: 20px;
-      top: 20px;
+      right: 0;
+      top: 0;
     }
     p {
       display: none;

@@ -1,40 +1,52 @@
+<?php $main_title = get_sub_field('main_title'); ?>
 <?php $title = get_sub_field('title'); ?>
+<?php $image_title = get_sub_field('title_image'); ?>
 <?php $text = get_sub_field('description'); ?>
 <?php $link = get_sub_field('link'); ?>
-<?php $bg_image = get_sub_field('bg_image'); ?>
+<?php $image = get_sub_field('image'); ?>
 
-<section class="home_section_1">
-  <?php
-  $size = 'full';
-  if (!empty($bg_image)): { ?>
-    <div class="bg_image">
-      <?php echo wp_get_attachment_image($bg_image, $size); ?>
+<section class="about_section_1">
+  <?php if (!empty($main_title)): ?>
+    <div class="dark-h1">
+      <?php print $main_title; ?>
     </div>
-    <?php
-  }
-  endif;
-  ?>
+  <?php endif; ?>
 
-  <div class="content_vertical_main">
+  <div class="content_gorizontal">
+    <div class="content_vertical">
 
-    <?php if (!empty($title)): ?>
-      <div class="white-h1">
-        <?php print $title; ?>
+      <?php if (!empty($title)): ?>
+        <div class="sub_title">
+          <?php print $title; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($text)): ?>
+        <div class="dark-description">
+          <?php print $text; ?>
+        </div>
+      <?php endif; ?>
+    </div>
+
+    <div class="content_vertical">
+      <div class="right">
+        <?php if (!empty($link)): ?>
+        <a href="<?php echo $link['url']; ?>" class="btn"> <?php echo $link['title']; ?>
+          <?php endif; ?>
+        </a>
       </div>
-    <?php endif; ?>
-
-    <?php if (!empty($text)): ?>
-      <div class="top-description">
-        <?php print $text; ?>
-      </div>
-    <?php endif; ?>
-
-    <div>
-      <?php if (!empty($link)): ?>
-      <a href="<?php echo $link['url']; ?>" class="btn"> <?php echo $link['title']; ?>
+      <div>
+        <?php if (!empty($image)): ?>
+          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
         <?php endif; ?>
-      </a>
+      </div>
+      <?php if (!empty($image_title)): ?>
+        <div class="image-title">
+          <?php print $image_title; ?>
+        </div>
+      <?php endif; ?>
     </div>
 
   </div>
+
 </section>

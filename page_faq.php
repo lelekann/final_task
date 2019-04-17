@@ -15,10 +15,7 @@ Template Post Type: page
     while (have_rows('faq')) :
       the_row(); ?>
       <ul class="block">
-        <li>
-          <h3 class="faq_question">
-            <?php the_sub_field('title'); ?>
-          </h3>
+        <li class="faq_question"> <?php the_sub_field('title'); ?>
           <div class="dark-description">
             <?php the_sub_field('description'); ?>
           </div>
