@@ -23,12 +23,11 @@
 
     li:after {
       content: "\f067";
-      font-family: 'Font Awesome 5 Free', sans-serif;
       color: #00a4e4;
-      font-weight: 700;
+      font: 700 14px 'Font Awesome 5 Free', sans-serif;
       position: absolute;
       right: 0;
-      top: 0;
+      top: 10px;
     }
     p {
       display: none;

@@ -12,8 +12,7 @@ Template Post Type: page
 <div class="information">
   <?php
   if (have_rows('faq')):
-    while (have_rows('faq')) :
-      the_row(); ?>
+    while (have_rows('faq')) : the_row(); ?>
       <ul class="block">
         <li class="faq_question"> <?php the_sub_field('title'); ?>
           <div class="dark-description">

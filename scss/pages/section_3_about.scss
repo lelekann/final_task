@@ -1,0 +1,45 @@
+.about_section_3 {
+  padding: 28px 67px 75px 84px;
+  text-align: center;
+
+  .dark-h1 {
+    margin-bottom: 57px;
+  }
+
+  .content_gorizontal {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+
+    .content_vertical {
+      display: flex;
+      flex-direction: column;
+      max-width: 310px;
+
+      .sub_title {
+        color: $font-color-2;
+        font: 500 25px/30px "Barlow", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .value {
+        color: #51b4bd;
+        font: 500 77px "Barlow", sans-serif;
+        letter-spacing: -1.54px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .small_text {
+        color: #505050;
+        font: 500 16px/25px "Barlow", sans-serif;
+        max-width: 270px;
+        margin-top: 5px;
+      }
+    }
+
+  }
+}
