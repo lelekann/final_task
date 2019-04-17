@@ -1,0 +1,31 @@
+.about_section_4 {
+  padding-right: 60px;
+  background: #d4e5e5;
+
+  .content_gorizontal {
+    display: flex;
+    justify-content: space-between;
+
+    .image {
+      vertical-align: bottom;
+    }
+
+    .content_vertical {
+      display: flex;
+      flex-direction: column;
+
+      .dark-h1 {
+        margin: 35px 0;
+        max-width: 320px;
+      }
+      .dark-description-2 {
+        max-width: 535px;
+        color: $font-color-2;
+        font: 500 17px/35px "Barlow", sans-serif;
+        letter-spacing: -0.34px;
+
+      }
+
+    }
+  }
+}

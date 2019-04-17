@@ -1,0 +1,26 @@
+.about_section_2 {
+  padding: 35px 180px 40px 140px;
+  background: #51b4bd;
+
+  .content_gorizontal {
+    display: flex;
+    justify-content: space-between;
+
+    .content_vertical {
+      display: flex;
+      flex-direction: column;
+
+      .sub_title {
+        color: $font-color-2;
+        font: 500 25px/30px "Barlow", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+      }
+      .white-description {
+        max-width: 580px;
+      }
+
+    }
+  }
+}
