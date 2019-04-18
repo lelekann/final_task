@@ -10,6 +10,7 @@
     text-align: left;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .wrap {
       position: relative;
@@ -20,7 +21,7 @@
         display: flex;
         flex-direction: column;
         max-width: 320px;
-        padding: 30px 40px;
+        padding: 20px 30px;
         top: 0;
         left: 0;
         z-index: 2;
@@ -30,7 +31,7 @@
           font: 500 20px/35px "Barlow", sans-serif;
           text-transform: uppercase;
           letter-spacing: 1.6px;
-          max-width: 270px;
+          max-width: 280px;
           margin-bottom: 15px;
           text-align: center;
         }

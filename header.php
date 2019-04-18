@@ -6,13 +6,13 @@
   <title><?php wp_title(); ?></title>
   <?php wp_head(); ?>
 </head>
+
 <body>
-<header id="header">
-  <div class="container">
-    <div id="logo">
+
+<header id="header" class="container">
+     <div id="logo">
       <a href="<?php echo home_url(); ?>">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/Logo.png" alt="Logo LifeLens"
-             title="LifeLens Financial">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/Logo.png" alt="Logo LifeLens" title="LifeLens Financial">
       </a
     </div>
     <div id="nav-menu-header">
@@ -22,7 +22,6 @@
         'menu_class'      => 'menu-header'
       )); ?>
     </div>
-  </div>
 </header>
 
 <main>
