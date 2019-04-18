@@ -10,10 +10,11 @@
 <body>
 
 <header id="header" class="container">
-     <div id="logo">
+  <div class="nav">
+    <div id="logo">
       <a href="<?php echo home_url(); ?>">
         <img src="<?php bloginfo('template_url'); ?>/assets/images/Logo.png" alt="Logo LifeLens" title="LifeLens Financial">
-      </a
+      </a>
     </div>
     <div id="nav-menu-header">
       <?php wp_nav_menu( array(
@@ -22,6 +23,8 @@
         'menu_class'      => 'menu-header'
       )); ?>
     </div>
+  </div>
+
 </header>
 
 <main>

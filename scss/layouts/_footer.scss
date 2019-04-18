@@ -1,10 +1,16 @@
 #footer {
-  padding: 2em 4em 2.5em;
   background: #f2f2f2;
-
   .footer {
     display: flex;
     justify-content: space-between;
+    padding: 35px 70px 70px;
+
+    h3 {
+      color: #333333;
+      font: 500 19px "Barlow", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1.52px;
+    }
 
     ul {
       list-style: none;
@@ -12,15 +18,24 @@
 
       li {
         margin-bottom: 10px;
+
         a {
           color: #848484;
           text-decoration: none;
+          font: 500 16px "Barlow", sans-serif;
+          letter-spacing: -0.19px;;
         }
       }
     }
 
     .join {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      form {
+        display: flex;
+        flex-direction: column;
 
       #email {
         width: 520px;
@@ -28,7 +43,23 @@
         padding: 18px;
 
       }
+      }
+      .social-icon li {
+        display: inline-block;
+        margin-right: 20px;
+
+        a {
+          color: #0d84e3;
+
+          i {
+            font-size: 30px;
+          }
+        }
+
+      }
     }
   }
+
 }
+
 
