@@ -1,9 +1,10 @@
 #footer {
   background: #f2f2f2;
+
   .footer {
     display: flex;
     justify-content: space-between;
-    padding: 35px 70px 70px;
+    padding: 15px 70px 70px;
 
     h3 {
       color: #333333;
@@ -20,11 +21,17 @@
         margin-bottom: 10px;
 
         a {
-          color: #848484;
+          @include font_footer();
           text-decoration: none;
-          font: 500 16px "Barlow", sans-serif;
-          letter-spacing: -0.19px;;
         }
+      }
+    }
+
+    .email {
+      font-size: 0;
+      .btn {
+        padding: 8px 15px;
+
       }
     }
 
@@ -36,26 +43,29 @@
       form {
         display: flex;
         flex-direction: column;
-
-      #email {
-        width: 520px;
-        height: 40px;
-        padding: 18px;
-
-      }
-      }
-      .social-icon li {
-        display: inline-block;
-        margin-right: 20px;
-
-        a {
-          color: #0d84e3;
-
-          i {
-            font-size: 30px;
+        .agree {
+          @include font_footer();
+          a {
+            text-decoration: none;
           }
         }
 
+      }
+
+      .social-icon {
+        li {
+          display: inline-block;
+          margin-right: 20px;
+
+          a {
+            color: #0d84e3;
+
+            i {
+              font-size: 30px;
+            }
+          }
+
+        }
       }
     }
   }

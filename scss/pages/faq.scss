@@ -3,14 +3,16 @@
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-   h1 {
+
+  h1 {
     text-transform: capitalize;
   }
 }
 
 .information {
   padding: 80px 145px 250px;
-  .block {
+
+  .question_block {
     border: 1px solid #e2e2e2;
     padding: 15px;
     list-style: none;
@@ -18,8 +20,8 @@
 
     li {
       cursor: pointer;
-      position:relative;
-       }
+      position: relative;
+    }
 
     li:after {
       content: "\f067";
@@ -29,8 +31,28 @@
       right: 0;
       top: 10px;
     }
+
+    li:hover {
+      color: #007fb6;
+    }
+
     p {
       display: none;
-      }
+    }
+
+  }
+
+  .question_active {
+    background: #f2f2f2;
+
+    li:after {
+      content: "\f068";
+
+    }
+
+    p {
+      display: block;
+      margin-top: 15px;
+    }
   }
 }

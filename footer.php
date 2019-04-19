@@ -30,7 +30,7 @@
         <div class="email">
           <label for="email">
             <input id="email" type="email" placeholder="Join our email list and get tips. learn about Webinars and more!">
-            <button class="button">Join Us!</button>
+            <button class="btn">Join Us!</button>
           </label>
         </div>
         <div class="agree">
