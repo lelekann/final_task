@@ -14,8 +14,28 @@
 
     .wrap {
       position: relative;
+      cursor: pointer;
 
+      .content_vertical {
+        display: none;
+      }
+    }
 
+    .wrap_for_hover:hover {
+      .wrap:after {
+        background: linear-gradient(to bottom, rgba(0, 156, 216, 0.7) 0%, rgba(0, 156, 216, 0.7) 100%);
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+      .bg_image {
+        filter: grayscale(1);
+      }
       .content_vertical {
         position: absolute;
         display: flex;
@@ -37,18 +57,8 @@
         }
 
       }
+
     }
-    .wrap:after {
-      background: linear-gradient(to bottom, rgba(0, 146, 203, 0.8) 0%, rgba(0, 146, 203, 0.8) 100%);
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 1;
-      color: #0092cb;
-    }
+
   }
 }

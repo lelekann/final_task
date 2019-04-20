@@ -14,6 +14,7 @@
 
         <?php $image = get_sub_field('bg_image'); ?>
 
+      <div class="wrap_for_hover">
         <div class="wrap">
           <div class="bg_image">
             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"/>
@@ -32,6 +33,9 @@
 
           </div>
         </div>
+      </div>
+
+
 
       <?php endwhile;
     else :
